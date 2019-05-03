@@ -29,12 +29,12 @@ while times < 100:
         
 # 第三方 SMTP 服务
 mail_host="smtp.126.com"  #设置服务器
-mail_user="berryip@126.com"    #用户名
-mail_pass="raspberry123"   #口令 
+mail_user="emailaddr@126.com"    #用户名
+mail_pass="passwd"   #口令 
  
  
-sender = 'berryip@126.com'
-receivers = ['berryip@126.com']  # 接收邮件
+sender = 'emailaddr@126.com'
+receivers = ['emailaddr@126.com']  # 接收邮件
 
 newadd = get_ip('wlan0')
 message = MIMEText("The ip_address is " + newadd, 'plain', 'utf-8')
